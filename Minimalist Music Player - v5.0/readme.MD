@@ -1,6 +1,6 @@
 #### Minimalist Music App v 5.0 by Guilherme Vialle
 
--   #### Features
+-   ### Features
 
 -   Responsive
 -   Cool design

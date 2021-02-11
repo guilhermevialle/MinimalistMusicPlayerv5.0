@@ -1,0 +1,657 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 120vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.paiDaInterface {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  opacity: 0;
+  -webkit-transform: translateY(-500px);
+          transform: translateY(-500px);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.interface {
+  width: 27%;
+  height: 90vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+      grid-template-areas: "imgDaMusicaBox imgDaMusicaBox imgDaMusicaBox" "imgDaMusicaBox imgDaMusicaBox imgDaMusicaBox" "info info info" "controllers controllers controllers" "musicTimerBox musicTimerBox musicTimerBox";
+  -webkit-box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+          box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  background-image: radial-gradient(circle 939px at 94.7% 50%, #120b1f 0%, #8a1919 76.9%);
+  border-radius: 8px;
+  position: relative;
+}
+
+.imgDaMusicaBox {
+  width: 100%;
+  height: 100%;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: imgDaMusicaBox;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.imgDaMusicaBox img {
+  max-width: 300px;
+  max-height: 85%;
+  border-radius: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.info {
+  width: 100%;
+  height: 100%;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: info;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.info p {
+  font-weight: 500;
+  color: #da1c1c;
+  text-transform: uppercase;
+}
+
+.info h3 {
+  color: white;
+  font-weight: 600;
+}
+
+.controllers {
+  width: 100%;
+  height: 100%;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: controllers;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.controllers img {
+  display: block;
+  max-width: 19.5%;
+  max-height: 100%;
+  max-width: 32px;
+  cursor: pointer;
+  border-radius: 20px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.controllers img:hover {
+  background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
+}
+
+.controllers #repeat,
+.controllers #volume {
+  max-width: 24px;
+}
+
+#play {
+  max-width: 22%;
+  background-color: #3f0d12;
+  background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
+  border-radius: 50%;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+#play:hover {
+  background-image: linear-gradient(315deg, #240609 0%, #751523 74%);
+}
+
+.musicTimerBox {
+  width: 100%;
+  height: 100%;
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: musicTimerBox;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+#totalTime,
+#musicTimeDinamic {
+  color: white;
+  font-size: 0.89rem;
+  position: absolute;
+}
+
+#musicTimeDinamic {
+  right: 85%;
+  bottom: 12px;
+}
+
+#totalTime {
+  letter-spacing: 1px;
+  left: 70%;
+  bottom: 15px;
+}
+
+input[type="range"] {
+  width: 80%;
+  margin: 7.4px 0;
+  background-color: transparent;
+  -webkit-appearance: none;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1.3px solid rgba(0, 0, 0, 0);
+  border-radius: 1.3px;
+  width: 100%;
+  height: 3.2px;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  margin-top: -8.7px;
+  width: 18px;
+  height: 18px;
+  background: #ffffff;
+  border: 0.1px solid #8b0000;
+  border-radius: 18px;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #310505;
+}
+
+input[type="range"]::-moz-range-track {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1.3px solid rgba(0, 0, 0, 0);
+  border-radius: 1.3px;
+  width: 100%;
+  height: 3.2px;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  background: #ffffff;
+  border: 0.1px solid #8b0000;
+  border-radius: 18px;
+  cursor: pointer;
+}
+
+input[type="range"]::-ms-track {
+  background: transparent;
+  border-color: transparent;
+  border-width: 7.4px 0;
+  color: transparent;
+  width: 100%;
+  height: 3.2px;
+  cursor: pointer;
+}
+
+input[type="range"]::-ms-fill-lower {
+  background: #000000;
+  border: 1.3px solid rgba(0, 0, 0, 0);
+  border-radius: 2.6px;
+}
+
+input[type="range"]::-ms-fill-upper {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1.3px solid rgba(0, 0, 0, 0);
+  border-radius: 2.6px;
+}
+
+input[type="range"]::-ms-thumb {
+  width: 18px;
+  height: 18px;
+  background: #ffffff;
+  border: 0.1px solid #8b0000;
+  border-radius: 18px;
+  cursor: pointer;
+  margin-top: 0px;
+  /*Needed to keep the Edge thumb centred*/
+}
+
+input[type="range"]:focus::-ms-fill-lower {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+input[type="range"]:focus::-ms-fill-upper {
+  background: #666666;
+}
+
+/*TODO: Use one of the selectors from https://stackoverflow.com/a/20541859/7077589 and figure out
+how to remove the virtical space around the range input in IE*/
+@supports (-ms-ime-align: auto) {
+  /* Pre-Chromium Edge only styles, selector taken from hhttps://stackoverflow.com/a/32202953/7077589 */
+  input[type="range"] {
+    margin: 0;
+    /*Edge starts the margin from the thumb, not the track as other browsers do*/
+  }
+}
+
+#volumeRange {
+  width: 50px;
+  position: absolute;
+  bottom: 36.5%;
+  right: 4.5%;
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+  -webkit-transform: rotateZ(-90deg);
+          transform: rotateZ(-90deg);
+}
+
+#volumeRange::-webkit-slider-thumb {
+  -webkit-box-shadow: 1px 1px 1px #000000;
+          box-shadow: 1px 1px 1px #000000;
+  border: 1px solid #4b0e0e;
+  height: 15px;
+  width: 6px;
+  border-radius: 1px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7px;
+}
+
+.footer {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.miniatura {
+  width: 25%;
+  height: 65vh;
+  background-image: radial-gradient(circle 939px at 94.7% 50%, #120b1f 0%, #8a1919 76.9%);
+  overflow: scroll;
+  overflow-x: hidden;
+  opacity: 1;
+  -webkit-transform: translateX(-300px);
+          transform: translateX(-300px);
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  z-index: -1;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(linear, left bottom, left top, from(#c98080), color-stop(52%, #6d5e8a));
+  background: linear-gradient(0deg, #c98080 0%, #6d5e8a 52%);
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(13deg, #640e0e 0%, #2c0d66 61%);
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 15px;
+  -webkit-box-shadow: inset 7px 10px 12px #f0f0f0;
+          box-shadow: inset 7px 10px 12px #f0f0f0;
+}
+
+.faixa {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  margin: 3px 3px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+  border-bottom: 1px solid white;
+  margin-top: 1px;
+}
+
+.faixa:hover {
+  background-color: rgba(42, 7, 7, 0.65);
+}
+
+.imgFaixaBox {
+  width: 50%;
+  height: 100%;
+}
+
+.imgFaixaBox img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.infoMusic {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nome,
+.titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 50%;
+  color: white;
+  font-size: 0.67rem;
+}
+
+.nome p {
+  font-weight: 400;
+  color: #da1c1c;
+  text-transform: uppercase;
+}
+
+.titulo h3 {
+  color: white;
+  font-weight: 500;
+}
+
+.addMusicsBox {
+  opacity: 1;
+  -webkit-transform: translateX(300px);
+          transform: translateX(300px);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  width: 25%;
+  height: 65vh;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  padding: 25px;
+  background-image: linear-gradient(60deg, #41050f 0%, #000b14 100%);
+}
+
+.addMusicsBox h3 {
+  font-weight: 600;
+}
+
+.addMusicsBox label {
+  text-align: center;
+  width: 80%;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  border-bottom: 2px solid rgba(53, 8, 8, 0.459);
+}
+
+.addMusicsBox input[type="file"] {
+  display: none;
+}
+
+.addMusicsBox input {
+  text-align: center;
+  background-color: transparent;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  width: 80%;
+  height: 50px;
+  border-bottom: 1px solid rgba(41, 6, 6, 0.267);
+  color: white;
+}
+
+.addMusicsBox input::-webkit-input-placeholder {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.322);
+  text-align: center;
+}
+
+.addMusicsBox input:-ms-input-placeholder {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.322);
+  text-align: center;
+}
+
+.addMusicsBox input::-ms-input-placeholder {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.322);
+  text-align: center;
+}
+
+.addMusicsBox input::placeholder {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.322);
+  text-align: center;
+}
+
+.addMusicsBox button {
+  color: white;
+  width: 150px;
+  height: 50px;
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  background-color: transparent;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border-radius: 10px;
+}
+
+.addMusicsBox button:hover {
+  background-color: #1a0303e7;
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+
+#buttonHover {
+  -webkit-transform: rotateZ(-90deg);
+          transform: rotateZ(-90deg);
+  position: absolute;
+  left: 78%;
+  top: 26.6%;
+  color: white;
+  outline: none;
+  border: none;
+  width: 125px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  opacity: 0.7;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.displayOff {
+  z-index: -1;
+  pointer-events: all;
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.addMusicsBoxInvalidValues {
+  -webkit-animation: vibrar 0.3s ease;
+          animation: vibrar 0.3s ease;
+}
+
+@-webkit-keyframes vibrar {
+  0% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  50% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes vibrar {
+  0% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  50% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.teste {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+#addMusicButton {
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+  position: absolute;
+  right: 78.5%;
+  top: 40%;
+  color: white;
+  outline: none;
+  border: none;
+  width: 125px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  opacity: 0.7;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+/*# sourceMappingURL=file.css.map */

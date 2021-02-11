@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Music App Refactored para testes</title>
+        <link rel="stylesheet" href="file.css" />
+    </head>
+    <body onload="animation()">
+        <div class="footer">
+            Twitter:
+            <a href="https://twitter.com/guivialle">&copy;GuilhermeVialle</a>
+            <p>All Copyrights Reserved.</p>
+        </div>
+        <div class="paiDaInterface">
+            <div id="addMusicsBox" class="addMusicsBox">
+                <h3>Adicione sua Música!</h3>
+
+                <label for="musicFile">Enviar música...</label>
+                <input
+                    accept="audio/mp3"
+                    type="file"
+                    name="musicFile"
+                    id="musicFile"
+                />
+
+                <label for="imgFile">Enviar imagem...</label>
+                <input
+                    accept="image/jpeg"
+                    type="file"
+                    name="imgFile"
+                    id="imgFile"
+                />
+
+                <input
+                    type="text"
+                    name="autorFile"
+                    id="autorFile"
+                    placeholder="Nome do Artista"
+                />
+
+                <input
+                    type="text"
+                    name="nomeDaMusicaFile"
+                    id="nomeDaMusicaFile"
+                    placeholder="Nome da Música"
+                />
+
+                <button id="pegarFiles">Enviar Arquivos!</button>
+            </div>
+
+            <div id="interface" class="interface">
+                <p onmouseenter="showBox()" id="addMusicButton">Add musics</p>
+                <div class="imgDaMusicaBox">
+                    <img id="imgDaMusica" />
+                    <audio id="audioDaMusica"></audio>
+                </div>
+                <div class="info">
+                    <p id="autorDaMusica"></p>
+                    <h3 id="nomeDaMusica"></h3>
+                </div>
+                <div class="controllers">
+                    <img id="repeat" src="/icons/repeat.png" />
+                    <img id="prev" src="/icons/prev.png" />
+                    <img id="play" src="/icons/play.png" />
+                    <img id="next" src="/icons/next.png" />
+                    <img id="volume" src="/icons/volume.png" />
+                </div>
+                <div class="musicTimerBox">
+                    <input type="range" name="timeSlider" id="timeSlider" />
+                    <p id="musicTimeDinamic"></p>
+                    <p id="totalTime"></p>
+                </div>
+                <input type="range" name="volumeRange" id="volumeRange" />
+                <p id="buttonHover">Musics</p>
+            </div>
+
+            <div id="miniatura" class="miniatura">
+                <div id="faixa" class="faixa">
+                    <div class="imgFaixaBox">
+                        <img id="imgDaMusicaMiniatura" />
+                    </div>
+                    <div class="infoMusic">
+                        <div class="nome">
+                            <p id="nomeDoAutorMiniatura"></p>
+                        </div>
+                        <div class="titulo">
+                            <h3 id="nomeDaMusicaMiniatura"></h3>
+                        </div>
+                    </div>
+                </div>
+                <div id="faixa" class="faixa">
+                    <div class="imgFaixaBox">
+                        <img id="imgDaMusicaMiniatura" />
+                    </div>
+                    <div class="infoMusic">
+                        <div class="nome">
+                            <p id="nomeDoAutorMiniatura"></p>
+                        </div>
+                        <div class="titulo">
+                            <h3 id="nomeDaMusicaMiniatura"></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="faixa" class="faixa">
+                    <div class="imgFaixaBox">
+                        <img id="imgDaMusicaMiniatura" />
+                    </div>
+                    <div class="infoMusic">
+                        <div class="nome">
+                            <p id="nomeDoAutorMiniatura"></p>
+                        </div>
+                        <div class="titulo">
+                            <h3 id="nomeDaMusicaMiniatura"></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="faixa" class="faixa">
+                    <div class="imgFaixaBox">
+                        <img id="imgDaMusicaMiniatura" />
+                    </div>
+                    <div class="infoMusic">
+                        <div class="nome">
+                            <p id="nomeDoAutorMiniatura"></p>
+                        </div>
+                        <div class="titulo">
+                            <h3 id="nomeDaMusicaMiniatura"></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="faixa" class="faixa">
+                    <div class="imgFaixaBox">
+                        <img id="imgDaMusicaMiniatura" />
+                    </div>
+                    <div class="infoMusic">
+                        <div class="nome">
+                            <p id="nomeDoAutorMiniatura"></p>
+                        </div>
+                        <div class="titulo">
+                            <h3 id="nomeDaMusicaMiniatura"></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="faixa" class="faixa">
+                    <div class="imgFaixaBox">
+                        <img id="imgDaMusicaMiniatura" />
+                    </div>
+                    <div class="infoMusic">
+                        <div class="nome">
+                            <p id="nomeDoAutorMiniatura"></p>
+                        </div>
+                        <div class="titulo">
+                            <h3 id="nomeDaMusicaMiniatura"></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="faixa" class="faixa">
+                    <div class="imgFaixaBox">
+                        <img id="imgDaMusicaMiniatura" />
+                    </div>
+                    <div class="infoMusic">
+                        <div class="nome">
+                            <p id="nomeDoAutorMiniatura"></p>
+                        </div>
+                        <div class="titulo">
+                            <h3 id="nomeDaMusicaMiniatura"></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="faixa" class="faixa">
+                    <div class="imgFaixaBox">
+                        <img id="imgDaMusicaMiniatura" />
+                    </div>
+                    <div class="infoMusic">
+                        <div class="nome">
+                            <p id="nomeDoAutorMiniatura"></p>
+                        </div>
+                        <div class="titulo">
+                            <h3 id="nomeDaMusicaMiniatura"></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="faixa" class="faixa">
+                    <div class="imgFaixaBox">
+                        <img id="imgDaMusicaMiniatura" />
+                    </div>
+                    <div class="infoMusic">
+                        <div class="nome">
+                            <p id="nomeDoAutorMiniatura"></p>
+                        </div>
+                        <div class="titulo">
+                            <h3 id="nomeDaMusicaMiniatura"></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>

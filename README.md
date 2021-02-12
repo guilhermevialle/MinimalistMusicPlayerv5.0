@@ -1,7 +1,7 @@
 # MinimalistMusicPlayerv5.0
 Meu Player de Música funcional e com opção de adicionar as próprias músicas.
 
-#### Minimalist Music App v 5.0 by Guilherme Vialle
+#### Minimalist Music App v5.0 by Guilherme Vialle
 
 -   Responsive
 -   Cool design

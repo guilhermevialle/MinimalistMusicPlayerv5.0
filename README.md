@@ -24,8 +24,6 @@
   > ## All Copyrights Reserved.
  > ## Note: I want a job.
 
----
-
    ### License
 
 -   GNU General Public License

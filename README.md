@@ -11,7 +11,7 @@
 -   Minimalist
 -   Add your musics!
 
--   ### Screeenshots
+   ### Screeenshots
 
    ![](https://github.com/guilhermevialle/MinimalistMusicPlayerv5.0/blob/main/Minimalist%20Music%20Player%20-%20v5.0/Screenshots/capture1.PNG)
 
@@ -21,12 +21,12 @@
    
    ![](https://github.com/guilhermevialle/MinimalistMusicPlayerv5.0/blob/main/Minimalist%20Music%20Player%20-%20v5.0/Screenshots/capture3.PNG)
 
--   > ## All Copyrights Reserved!!!
-- ## Note: I want a job.
+  > ## All Copyrights Reserved!!!
+ ## Note: I want a job.
 
 ---
 
--   ### License
+   ### License
 
 -   GNU General Public License
 

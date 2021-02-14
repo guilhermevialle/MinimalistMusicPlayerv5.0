@@ -1,4 +1,6 @@
-#### Minimalist Music App v 5.0 by Guilherme Vialle
+#### Minimalist Music App v 5.0 
+
+> #### by guilhermevialle
 
 -   ### Features
 

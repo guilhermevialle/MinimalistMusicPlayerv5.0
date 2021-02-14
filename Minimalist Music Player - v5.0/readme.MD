@@ -11,7 +11,7 @@
 
 -   ### Screeenshots
 
-![](Minimalist%20Music%20Player%20-%20v5.0/Screenshots/capture.PNG)
+-   ![](Minimalist%20Music%20Player%20-%20v5.0/Screenshots/capture.PNG)
 
 -   ### All Copyrights Reserved!!!
 

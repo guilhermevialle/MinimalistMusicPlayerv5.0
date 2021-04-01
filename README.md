@@ -23,18 +23,18 @@
 
 -   #### Usage
 
-    ![Player usage guide](./Minimalist Music Player - v5.0/gifs/gif.gif)
+    ![Player usage guide](https://github.com/guilhermevialle/MinimalistMusicPlayerv5.0/blob/main/Minimalist%20Music%20Player%20-%20v5.0/gifs/gif.gif)
 
 -   #### Guide to selecting and adding songs
 
-       <img src="./Minimalist Music Player - v5.0/Screenshots/capture2.png">
+       <img src="https://github.com/guilhermevialle/MinimalistMusicPlayerv5.0/blob/main/Minimalist%20Music%20Player%20-%20v5.0/Screenshots/capture2.PNG" width="450px">
 
 -   #### You can add your own music, with your own images, names...
 
-    ![Adding musics](./Minimalist Music Player - v5.0/gifs/gif.gif)
+    ![Adding musics](https://github.com/guilhermevialle/MinimalistMusicPlayerv5.0/blob/main/Minimalist%20Music%20Player%20-%20v5.0/gifs/gif2.gif)
 
 -   #### You can also choose which song you want to play in a list format
-      <img src="./Minimalist Music Player - v5.0/screenshots/capture3.png">
+      <img src="https://github.com/guilhermevialle/MinimalistMusicPlayerv5.0/blob/main/Minimalist%20Music%20Player%20-%20v5.0/Screenshots/capture3.PNG" width="450px">
 
 ### About copy
 

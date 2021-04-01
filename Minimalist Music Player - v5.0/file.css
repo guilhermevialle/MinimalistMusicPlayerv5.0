@@ -9,7 +9,9 @@
 
 body {
   width: 100%;
-  height: 120vh;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, right top, left bottom, from(#0d0102), color-stop(#110203), color-stop(#150204), color-stop(#180304), color-stop(#1b0405), color-stop(#200506), color-stop(#240606), color-stop(#280706), color-stop(#2f0706), color-stop(#360605), color-stop(#3d0404), to(#440202));
+  background-image: linear-gradient(to left bottom, #0d0102, #110203, #150204, #180304, #1b0405, #200506, #240606, #280706, #2f0706, #360605, #3d0404, #440202);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,9 +61,10 @@ body {
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
       grid-template-areas: "imgDaMusicaBox imgDaMusicaBox imgDaMusicaBox" "imgDaMusicaBox imgDaMusicaBox imgDaMusicaBox" "info info info" "controllers controllers controllers" "musicTimerBox musicTimerBox musicTimerBox";
-  -webkit-box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-          box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-  background-image: radial-gradient(circle 939px at 94.7% 50%, #120b1f 0%, #8a1919 76.9%);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background-image: -webkit-gradient(linear, right top, left bottom, from(#0d0102), color-stop(#110203), color-stop(#150204), color-stop(#180304), color-stop(#1b0405), color-stop(#1c0405), color-stop(#1c0505), color-stop(#1d0505), color-stop(#1b0505), color-stop(#190404), color-stop(#170404), to(#140303));
+  background-image: linear-gradient(to left bottom, #0d0102, #110203, #150204, #180304, #1b0405, #1c0405, #1c0505, #1d0505, #1b0505, #190404, #170404, #140303);
   border-radius: 8px;
   position: relative;
 }
@@ -88,12 +91,10 @@ body {
 .imgDaMusicaBox img {
   max-width: 300px;
   max-height: 85%;
-  border-radius: 30px;
   -o-object-fit: cover;
      object-fit: cover;
-  padding: 5px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .info {
@@ -173,14 +174,17 @@ body {
 #play {
   max-width: 22%;
   background-color: #3f0d12;
-  background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
+  background-image: linear-gradient(315deg, #580c13 0%, #240609 74%);
   border-radius: 50%;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-          box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  -webkit-transition: 0.3s all ease-in;
+  transition: 0.3s all ease-in;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border: 0.5px solid transparent;
 }
 
 #play:hover {
-  background-image: linear-gradient(315deg, #240609 0%, #751523 74%);
+  border: 0.5px solid #8d0a17;
 }
 
 .musicTimerBox {
@@ -360,7 +364,8 @@ how to remove the virtical space around the range input in IE*/
 .miniatura {
   width: 25%;
   height: 65vh;
-  background-image: radial-gradient(circle 939px at 94.7% 50%, #120b1f 0%, #8a1919 76.9%);
+  background-image: -webkit-gradient(linear, right top, left bottom, from(#0d0102), color-stop(#110203), color-stop(#150204), color-stop(#180304), color-stop(#1b0405), color-stop(#1c0405), color-stop(#1c0505), color-stop(#1d0505), color-stop(#1b0505), color-stop(#190404), color-stop(#170404), to(#140303));
+  background-image: linear-gradient(to left bottom, #0d0102, #110203, #150204, #180304, #1b0405, #1c0405, #1c0505, #1d0505, #1b0505, #190404, #170404, #140303);
   overflow: scroll;
   overflow-x: hidden;
   opacity: 1;
@@ -369,6 +374,8 @@ how to remove the virtical space around the range input in IE*/
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
   z-index: -1;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 ::-webkit-scrollbar {
@@ -377,20 +384,20 @@ how to remove the virtical space around the range input in IE*/
 }
 
 ::-webkit-scrollbar-thumb {
-  background: -webkit-gradient(linear, left bottom, left top, from(#c98080), color-stop(52%, #6d5e8a));
-  background: linear-gradient(0deg, #c98080 0%, #6d5e8a 52%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#440202), color-stop(52%, #180304));
+  background: linear-gradient(0deg, #440202 0%, #180304 52%);
   border-radius: 15px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(13deg, #640e0e 0%, #2c0d66 61%);
+  background: linear-gradient(13deg, #180304 0%, #440202 61%);
 }
 
 ::-webkit-scrollbar-track {
-  background: #ffffff;
+  background: #0d0102;
   border-radius: 15px;
-  -webkit-box-shadow: inset 7px 10px 12px #f0f0f0;
-          box-shadow: inset 7px 10px 12px #f0f0f0;
+  -webkit-box-shadow: inset 7px 10px 12px #0d0102;
+          box-shadow: inset 7px 10px 12px #0d0102;
 }
 
 .faixa {
@@ -409,7 +416,7 @@ how to remove the virtical space around the range input in IE*/
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   cursor: pointer;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #555555;
   margin-top: 1px;
 }
 
@@ -471,6 +478,7 @@ how to remove the virtical space around the range input in IE*/
 
 .addMusicsBox {
   opacity: 1;
+  padding: 25px;
   -webkit-transform: translateX(300px);
           transform: translateX(300px);
   -webkit-transition: 0.3s ease;
@@ -491,10 +499,10 @@ how to remove the virtical space around the range input in IE*/
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-          box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-  padding: 25px;
-  background-image: linear-gradient(60deg, #41050f 0%, #000b14 100%);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background-image: -webkit-gradient(linear, right top, left bottom, from(#0d0102), color-stop(#110203), color-stop(#150204), color-stop(#180304), color-stop(#1b0405), color-stop(#1c0405), color-stop(#1c0505), color-stop(#1d0505), color-stop(#1b0505), color-stop(#190404), color-stop(#170404), to(#140303));
+  background-image: linear-gradient(to left bottom, #0d0102, #110203, #150204, #180304, #1b0405, #1c0405, #1c0505, #1d0505, #1b0505, #190404, #170404, #140303);
 }
 
 .addMusicsBox h3 {
@@ -559,12 +567,12 @@ how to remove the virtical space around the range input in IE*/
   outline: none;
   padding: 10px;
   cursor: pointer;
-  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   background-color: transparent;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   border-radius: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .addMusicsBox button:hover {
@@ -653,5 +661,17 @@ how to remove the virtical space around the range input in IE*/
   opacity: 0.7;
   font-size: 0.8rem;
   cursor: pointer;
+}
+
+.wave {
+  position: absolute;
+}
+
+.wave-bottom {
+  bottom: 0;
+}
+
+.wave-top {
+  top: 0;
 }
 /*# sourceMappingURL=file.css.map */

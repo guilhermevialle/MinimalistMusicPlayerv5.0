@@ -1,323 +1,329 @@
 const musicas = [
     {
-        name: 'Art Of Silence',
-        path: '/musics/music1.mp3',
-        img: '/images/img1.jpg',
-        autor: '[Free-to-Use]'
+        name: "Art Of Silence",
+        path: "./musics/music1.mp3",
+        img: "./images/img1.jpg",
+        autor: "[Free-to-Use]",
     },
     {
-        name: 'Vision',
-        path: '/musics/music2.mp3',
-        img: '/images/img2.jpg',
-        autor: 'Tenno'
+        name: "Vision",
+        path: "./musics/music2.mp3",
+        img: "./images/img2.jpg",
+        autor: "Tenno",
     },
     {
-        name: 'All That You Are is All That I Need',
-        path: '/musics/music3.mp3',
-        img: '/images/img3.jpg',
-        autor: 'Desconhecido'
+        name: "All That You Are is All That I Need",
+        path: "./musics/music3.mp3",
+        img: "./images/img3.jpg",
+        autor: "Desconhecido",
     },
     {
-        name: 'The Girl Next Door (Instrumental)',
-        path: '/musics/music4.mp3',
-        img: '/images/img4.jpg',
-        autor: 'ON TOP'
+        name: "The Girl Next Door (Instrumental)",
+        path: "./musics/music4.mp3",
+        img: "./images/img4.jpg",
+        autor: "ON TOP",
     },
     {
-        name: 'Levi vs Jaw Titan Theme',
-        path: '/musics/music5.mp3',
-        img: '/images/img5.jpg',
-        autor: 'Samuel Kim'
+        name: "Levi vs Jaw Titan Theme",
+        path: "./musics/music5.mp3",
+        img: "./images/img5.jpg",
+        autor: "Samuel Kim",
     },
     {
-        name: 'Eaten',
-        path: '/musics/music6.mp3',
-        img: '/images/img6.jpg',
-        autor: 'Bloodbath'
+        name: "Eaten",
+        path: "./musics/music6.mp3",
+        img: "./images/img6.jpg",
+        autor: "Bloodbath",
     },
     {
-        name: 'The Floor Is Lava',
-        path: '/musics/music7.mp3',
-        img: '/images/img7.jpg',
-        autor: '[NCS]'
+        name: "The Floor Is Lava",
+        path: "./musics/music7.mp3",
+        img: "./images/img7.jpg",
+        autor: "[NCS]",
     },
     {
-        name: 'Reiner Reveal Transformation',
-        path: '/musics/music8.mp3',
-        img: '/images/img8.jpg',
-        autor: 'Desconhecido'
+        name: "Reiner Reveal Transformation",
+        path: "./musics/music8.mp3",
+        img: "./images/img8.jpg",
+        autor: "Desconhecido",
     },
     {
-        name: 'You Only Live Once',
-        path: '/musics/music9.mp3',
-        img: '/images/img9.jpg',
-        autor: 'Suicide Silence'
+        name: "You Only Live Once",
+        path: "./musics/music9.mp3",
+        img: "./images/img9.jpg",
+        autor: "Suicide Silence",
     },
-]
+];
 
 // indice da musica atual
-var mainArray = 0
+var mainArray = 0;
 
 // elementos da musica
 
-const imgDaMusica = document.getElementById('imgDaMusica')
-const audioDaMusica = document.getElementById('audioDaMusica')
-const autorDaMusica = document.getElementById('autorDaMusica')
-const nomeDaMusica = document.getElementById('nomeDaMusica')
+const imgDaMusica = document.getElementById("imgDaMusica");
+const audioDaMusica = document.getElementById("audioDaMusica");
+const autorDaMusica = document.getElementById("autorDaMusica");
+const nomeDaMusica = document.getElementById("nomeDaMusica");
 
 // comeca na primeira musica
 
-nomeDaMusica.textContent = musicas[0].name
-imgDaMusica.src = musicas[0].img 
-autorDaMusica.textContent = musicas[0].autor
-audioDaMusica.src = musicas[0].path
+nomeDaMusica.textContent = musicas[0].name;
+imgDaMusica.src = musicas[0].img;
+autorDaMusica.textContent = musicas[0].autor;
+audioDaMusica.src = musicas[0].path;
 
 // elementos dos controladores
 
-const repeat = document.getElementById('repeat')
-const prev = document.getElementById('prev')
-const play = document.getElementById('play')
-const next = document.getElementById('next')
-const volume = document.getElementById('volume')
-const volumeRange = document.getElementById('volumeRange')
-const musicTimeDinamic = document.getElementById('musicTimeDinamic')
-const addMusicBoxInput = document.querySelectorAll('#addMusicsBox input')
-const addMusicBox = document.getElementById('addMusicsBox')
+const repeat = document.getElementById("repeat");
+const prev = document.getElementById("prev");
+const play = document.getElementById("play");
+const next = document.getElementById("next");
+const volume = document.getElementById("volume");
+const volumeRange = document.getElementById("volumeRange");
+const musicTimeDinamic = document.getElementById("musicTimeDinamic");
+const addMusicBoxInput = document.querySelectorAll("#addMusicsBox input");
+const addMusicBox = document.getElementById("addMusicsBox");
 
 // time slider / controlador do tempo da musica
 
-const timeSlider = document.getElementById('timeSlider')
-timeSlider.value = 0
+const timeSlider = document.getElementById("timeSlider");
+timeSlider.value = 0;
 
 // play music function
 
-play.style.maxWidth = '20%'
+play.style.maxWidth = "20%";
 
-play.addEventListener('click',playMusic,false)
+play.addEventListener("click", playMusic, false);
 
 function playMusic() {
     if (audioDaMusica.paused) {
-        audioDaMusica.play()
-        play.src = "/icons/pause.png"
-        var newtimer = setInterval(rangeSlider, 1000)
-    }
-    else {
-        audioDaMusica.pause()
-        play.src = "/icons/play.png"
+        audioDaMusica.play();
+        play.src = "./icons/pause.png";
+        var newtimer = setInterval(rangeSlider, 1000);
+    } else {
+        audioDaMusica.pause();
+        play.src = "./icons/play.png";
     }
 }
 
 // repeat music function
 
-repeat.addEventListener('click', repeatMusic, false)
+repeat.addEventListener("click", repeatMusic, false);
 
 function repeatMusic() {
     if (audioDaMusica.loop == 0) {
-        audioDaMusica.loop = 1
-        repeat.style.transform = 'scale(1.3,1.3)'
-    }
-    else {
-        audioDaMusica.loop = 0
-        repeat.style.backgroundColor = 'transparent'
-        repeat.style.transform = 'none'
+        audioDaMusica.loop = 1;
+        repeat.style.transform = "scale(1.3,1.3)";
+    } else {
+        audioDaMusica.loop = 0;
+        repeat.style.backgroundColor = "transparent";
+        repeat.style.transform = "none";
     }
 }
 
 // prev music function
 
-prev.addEventListener('click',prevMusic,false)
+prev.addEventListener("click", prevMusic, false);
 
 function prevMusic() {
     if (mainArray < 0) {
-        mainArray = 0
+        mainArray = 0;
         return;
-    }
-    else {
-        mainArray--
-        nomeDaMusica.textContent = musicas[mainArray].name
-        imgDaMusica.src = musicas[mainArray].img 
-        autorDaMusica.textContent = musicas[mainArray].autor
-        audioDaMusica.src = musicas[mainArray].path
-        playMusic()
+    } else {
+        mainArray--;
+        nomeDaMusica.textContent = musicas[mainArray].name;
+        imgDaMusica.src = musicas[mainArray].img;
+        autorDaMusica.textContent = musicas[mainArray].autor;
+        audioDaMusica.src = musicas[mainArray].path;
+        playMusic();
     }
 }
 
 //next music function
 
-next.addEventListener('click', nextMusic, false)
+next.addEventListener("click", nextMusic, false);
 
 function nextMusic() {
     if (mainArray > musicas.length) {
-        mainArray = (musicas.length - 1)
+        mainArray = musicas.length - 1;
         return;
-    }
-    else {
-        mainArray++
-        nomeDaMusica.textContent = musicas[mainArray].name
-        imgDaMusica.src = musicas[mainArray].img 
-        autorDaMusica.textContent = musicas[mainArray].autor
-        audioDaMusica.src = musicas[mainArray].path
-        playMusic()
+    } else {
+        mainArray++;
+        nomeDaMusica.textContent = musicas[mainArray].name;
+        imgDaMusica.src = musicas[mainArray].img;
+        autorDaMusica.textContent = musicas[mainArray].autor;
+        audioDaMusica.src = musicas[mainArray].path;
+        playMusic();
     }
 }
 
 // no volume function
 
-volume.addEventListener('click',semVolume,false)
+volume.addEventListener("click", semVolume, false);
 
 function semVolume() {
     if (audioDaMusica.volume) {
-        audioDaMusica.volume = 0
-        volume.src = "/icons/novolume.png"
-        volumeRange.style.display = 'none'
-    }
-    else {
-        audioDaMusica.volume = volumeRange.value / 100
-        volume.src = "/icons/volume.png"
-        volumeRange.style.display = 'flex'
+        audioDaMusica.volume = 0;
+        volume.src = "./icons/novolume.png";
+        volumeRange.style.display = "none";
+    } else {
+        audioDaMusica.volume = volumeRange.value / 100;
+        volume.src = "./icons/volume.png";
+        volumeRange.style.display = "flex";
     }
 }
 
-timeSlider.addEventListener('change', changeDuration, false)
+timeSlider.addEventListener("change", changeDuration, false);
 
 // escolher duracao da musica
 
 function changeDuration() {
-    sliderPosition = audioDaMusica.duration * (timeSlider.value / 100)
-    audioDaMusica.currentTime = sliderPosition
+    sliderPosition = audioDaMusica.duration * (timeSlider.value / 100);
+    audioDaMusica.currentTime = sliderPosition;
 }
 
 // duracao da musica dinamica
 
-const totalTime = document.getElementById('totalTime')
+const totalTime = document.getElementById("totalTime");
 
 function tempoDaMusica() {
-    var timeNow = Math.ceil(audioDaMusica.currentTime)
-    musicTimeDinamic.innerHTML = timeNow + 's' 
-    timeNow = (audioDaMusica.duration / 60).toFixed(2).toString()
-    totalTime.textContent = timeNow.replace(".", "min ") + 's'
+    var timeNow = Math.ceil(audioDaMusica.currentTime);
+    musicTimeDinamic.innerHTML = timeNow + "s";
+    timeNow = (audioDaMusica.duration / 60).toFixed(2).toString();
+    totalTime.textContent = timeNow.replace(".", ":");
 }
 
 function rangeSlider() {
-    let posicao = 0
+    let posicao = 0;
 
     if (!isNaN(audioDaMusica.duration)) {
-        position = audioDaMusica.currentTime * (100 / audioDaMusica.duration)
-        timeSlider.value = position
-        
-        tempoDaMusica()
+        position = audioDaMusica.currentTime * (100 / audioDaMusica.duration);
+        timeSlider.value = position;
+
+        tempoDaMusica();
 
         if (position == 100) {
-            nextMusic()
-       }
+            nextMusic();
+        }
     }
 }
 
-// volume change slider 
+// volume change slider
 
-volumeRange.addEventListener('change',changeVolume,false)
+volumeRange.addEventListener("change", changeVolume, false);
 
-volumeRange.value = 20
-audioDaMusica.volume = 0.2
+volumeRange.value = 20;
+audioDaMusica.volume = 0.2;
 
 function changeVolume() {
-    audioDaMusica.volume = volumeRange.value / 100
+    audioDaMusica.volume = volumeRange.value / 100;
 }
 
 // interface animation kk
 
-const interface = document.getElementById('interface')
-const footer = document.querySelector('.footer')
-const paiDaInterface = document.querySelector('.paiDaInterface')
+const interface = document.getElementById("interface");
+const footer = document.querySelector(".footer");
+const paiDaInterface = document.querySelector(".paiDaInterface");
 
 function animation() {
-    paiDaInterface.style.transform = 'translateY(0)'
-    paiDaInterface.style.opacity = 1
+    paiDaInterface.style.transform = "translateY(0)";
+    paiDaInterface.style.opacity = 1;
 }
 
-// miniatura scripts 
+// miniatura scripts
 
-const nomeDoAutorMiniatura = document.querySelectorAll('#nomeDoAutorMiniatura')
-const nomeDaMusicaMiniatura = document.querySelectorAll('#nomeDaMusicaMiniatura')
-const imgDaMusicaMiniatura = document.querySelectorAll('#imgDaMusicaMiniatura')
+const nomeDoAutorMiniatura = document.querySelectorAll("#nomeDoAutorMiniatura");
+const nomeDaMusicaMiniatura = document.querySelectorAll(
+    "#nomeDaMusicaMiniatura"
+);
+const imgDaMusicaMiniatura = document.querySelectorAll("#imgDaMusicaMiniatura");
 
-const divFaixa = document.querySelectorAll('#faixa')
+const divFaixa = document.querySelectorAll("#faixa");
 
 for (let newArray = 0; newArray < nomeDaMusicaMiniatura.length; newArray++) {
-    
-    nomeDoAutorMiniatura[newArray].textContent = musicas[newArray].autor
-    nomeDaMusicaMiniatura[newArray].textContent = musicas[newArray].name
-    imgDaMusicaMiniatura[newArray].src = musicas[newArray].img
+    nomeDoAutorMiniatura[newArray].textContent = musicas[newArray].autor;
+    nomeDaMusicaMiniatura[newArray].textContent = musicas[newArray].name;
+    imgDaMusicaMiniatura[newArray].src = musicas[newArray].img;
 
     function putMusic() {
-        mainArray = newArray
-        nomeDaMusica.textContent = musicas[newArray].name
-        imgDaMusica.src = musicas[newArray].img 
-        autorDaMusica.textContent = musicas[newArray].autor
-        audioDaMusica.src = musicas[newArray].path
-        playMusic()
+        mainArray = newArray;
+        nomeDaMusica.textContent = musicas[newArray].name;
+        imgDaMusica.src = musicas[newArray].img;
+        autorDaMusica.textContent = musicas[newArray].autor;
+        audioDaMusica.src = musicas[newArray].path;
+        playMusic();
     }
 
-        divFaixa[newArray].addEventListener('click', putMusic, false)
+    divFaixa[newArray].addEventListener("click", putMusic, false);
 }
 
 // enviar arquivos / add music
 
-const btnPegarFiles = document.getElementById('pegarFiles')
+const btnPegarFiles = document.getElementById("pegarFiles");
 
-const imgFile = document.getElementById('imgFile')
-const musicFile = document.getElementById('musicFile')
-const autorFile = document.getElementById('autorFile')
-const nomeDaMusicaFile = document.getElementById('nomeDaMusicaFile')
+const imgFile = document.getElementById("imgFile");
+const musicFile = document.getElementById("musicFile");
+const autorFile = document.getElementById("autorFile");
+const nomeDaMusicaFile = document.getElementById("nomeDaMusicaFile");
 
-btnPegarFiles.addEventListener('click', () => {
-    
-    //nome
-    const nomeDaMusicaFileCreated = nomeDaMusicaFile.value
+btnPegarFiles.addEventListener(
+    "click",
+    () => {
+        //nome
+        const nomeDaMusicaFileCreated = nomeDaMusicaFile.value;
 
-    //music
-    function musicFunc() {
-        const musicFileCreated = URL.createObjectURL(musicFile.files[0]);
-        return musicFileCreated
-    }
+        //music
+        function musicFunc() {
+            const musicFileCreated = URL.createObjectURL(musicFile.files[0]);
+            return musicFileCreated;
+        }
 
-    musicFile.addEventListener('change', musicFunc, false)
-    
-    //img
-    function imgFunc() {
-        const imgFileCreated = URL.createObjectURL(imgFile.files[0]);
-        return imgFileCreated
-    }
+        musicFile.addEventListener("change", musicFunc, false);
 
-    imgFile.addEventListener('change', imgFunc, false)
+        //img
+        function imgFunc() {
+            const imgFileCreated = URL.createObjectURL(imgFile.files[0]);
+            return imgFileCreated;
+        }
 
-    //autor 
-    const autorFileCreated = autorFile.value
+        imgFile.addEventListener("change", imgFunc, false);
 
-    AddInMainArray(nomeDaMusicaFileCreated, musicFunc(), imgFunc(), autorFileCreated)
-    addMusicInMiniatura(nomeDaMusicaFileCreated, imgFunc(), autorFileCreated)
-},false)
+        //autor
+        const autorFileCreated = autorFile.value;
+
+        AddInMainArray(
+            nomeDaMusicaFileCreated,
+            musicFunc(),
+            imgFunc(),
+            autorFileCreated
+        );
+        addMusicInMiniatura(
+            nomeDaMusicaFileCreated,
+            imgFunc(),
+            autorFileCreated
+        );
+    },
+    false
+);
 
 // funccao q add o objeto no array
 function AddInMainArray(name, path, img, autor) {
-   
     const newMusicArray = {
         name: name,
         path: path,
         img: img,
         autor: autor,
-    }
-    musicas.push(newMusicArray) 
+    };
+    musicas.push(newMusicArray);
 }
 
 // add musica na miniatura
-const miniatura = document.getElementById('miniatura')
+const miniatura = document.getElementById("miniatura");
 
 function addMusicInMiniatura(name, img, autor) {
-
-    var myDiv = document.createElement('div')
-    myDiv.id = 'faixa'
-    myDiv.className = 'faixa'
+    var myDiv = document.createElement("div");
+    myDiv.id = "faixa";
+    myDiv.className = "faixa";
 
     myDiv.innerHTML = `
     
@@ -333,63 +339,65 @@ function addMusicInMiniatura(name, img, autor) {
             </div>
         </div>    
 
-    `
-    miniatura.appendChild(myDiv)
+    `;
+    miniatura.appendChild(myDiv);
 }
 
-
-// button hover animation 
-const buttonHover = document.getElementById('buttonHover')
+// button hover animation
+const buttonHover = document.getElementById("buttonHover");
 
 function animationButton() {
-    miniatura.classList.toggle('displayOff')
+    miniatura.classList.toggle("displayOff");
 }
 
-buttonHover.addEventListener('click',animationButton,false)
-
+buttonHover.addEventListener("click", animationButton, false);
 
 // gambiarra animacao
 function gambiarra() {
-    if (miniatura.classList[1] == 'displayOff') {
-        miniatura.style.zIndex = 0
+    if (miniatura.classList[1] == "displayOff") {
+        miniatura.style.zIndex = 0;
     }
 }
 
-miniatura.addEventListener('transitionend',gambiarra,false)
+miniatura.addEventListener("transitionend", gambiarra, false);
 
-function gambiarra2(){
-    if (miniatura.classList[1] != 'displayOff') {            
-        miniatura.style.zIndex = -1
-        interface.style.zIndex = 10000
+function gambiarra2() {
+    if (miniatura.classList[1] != "displayOff") {
+        miniatura.style.zIndex = -1;
+        interface.style.zIndex = 10000;
     }
 }
 
-miniatura.addEventListener('transitionstart', gambiarra2,false)
+miniatura.addEventListener("transitionstart", gambiarra2, false);
 
-// button click to show add musics box 
-const addMusicButton = document.getElementById('addMusicButton')
+// button click to show add musics box
+const addMusicButton = document.getElementById("addMusicButton");
 
 function showBox() {
-    addMusicBox.classList.toggle('teste')
+    addMusicBox.classList.toggle("teste");
 }
 
 // colocar uma nova musica adicionada pra tocar *****BUG RESOLVIDO*****
 const addMusicWithNewArray = () => {
-    let newFaixa = document.querySelectorAll('#faixa')
-    console.log(musicas)
+    let newFaixa = document.querySelectorAll("#faixa");
+    console.log(musicas);
 
     newFaixa.forEach((item, index) => {
-            console.log(item, index)
-        item.addEventListener('click', () => {
-            mainArray = index
+        console.log(item, index);
+        item.addEventListener(
+            "click",
+            () => {
+                mainArray = index;
 
-            imgDaMusica.src = musicas[index].img
-            audioDaMusica.src = musicas[index].path
-            autorDaMusica.textContent = musicas[index].autor
-            nomeDaMusica.textContent = musicas[index].name
-            playMusic()
-        },false)
-    })
-}
+                imgDaMusica.src = musicas[index].img;
+                audioDaMusica.src = musicas[index].path;
+                autorDaMusica.textContent = musicas[index].autor;
+                nomeDaMusica.textContent = musicas[index].name;
+                playMusic();
+            },
+            false
+        );
+    });
+};
 
-miniatura.addEventListener('DOMNodeInserted',addMusicWithNewArray)
+miniatura.addEventListener("DOMNodeInserted", addMusicWithNewArray);

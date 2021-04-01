@@ -19,7 +19,7 @@
 
 -   #### Player Interface
 
-    <img src="./Minimalist Music Player - v5.0/screenshots/capture.png">
+    <img src="./Minimalist Music Player - v5.0/screenshots/capture.png" width="450px">
 
 -   #### Usage
 

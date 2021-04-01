@@ -1,4 +1,6 @@
-## Minimalist Music App v5.0 
+# Gruttles
+
+## Minimalist Music App
 
 > #### by guilhermevialle
 
@@ -13,30 +15,38 @@
 -   Select Musics
 -   And much more!
 
-   ### Preview
-   
-   - #### Home Interface
-   ![](https://github.com/guilhermevialle/MinimalistMusicPlayerv5.0/blob/main/Minimalist%20Music%20Player%20-%20v5.0/Screenshots/capture1.PNG)
+### Preview
 
-   - #### Music selection and editing tabs
-   ![](https://github.com/guilhermevialle/MinimalistMusicPlayerv5.0/blob/main/Minimalist%20Music%20Player%20-%20v5.0/Screenshots/capture.PNG)
+-   #### Player Interface
 
-   - #### You can add your own music, with your own images, names...
-   ![](https://github.com/guilhermevialle/MinimalistMusicPlayerv5.0/blob/main/Minimalist%20Music%20Player%20-%20v5.0/Screenshots/capture2.PNG)
-   
-   - #### You can also choose which song you want to play in a list format
-   ![](https://github.com/guilhermevialle/MinimalistMusicPlayerv5.0/blob/main/Minimalist%20Music%20Player%20-%20v5.0/Screenshots/capture3.PNG)
+    ![Player Interface](./Minimalist Music Player - v5.0/screenshots/capture.png)
 
-  > ## All Copyrights Reserved.
- > ## Note: I want a job.
+-   #### Usage
 
-   ### License
+    ![Player usage guide](./Minimalist Music Player - v5.0/gifs/gif.gif)
+
+-   #### Guide to selecting and adding songs
+
+    ![Tabs](./Minimalist Music Player - v5.0/screenshots/capture2.png)
+
+-   #### You can add your own music, with your own images, names...
+
+    ![Adding musics](./Minimalist Music Player - v5.0/gifs/gif.gif)
+
+-   #### You can also choose which song you want to play in a list format
+    ![Playlist](./Minimalist Music Player - v5.0/screenshots/capture3.png)
+
+### About copy
+
+-   All Copyrights Reserved.
+
+### License
 
 -   GNU General Public License
 
-------------
+---
 
 #### Social Media
 
-- https://twitter.com/guivialle
-- https://www.instagram.com/guilherme.vialle/
+-   https://twitter.com/guivialle
+-   https://www.instagram.com/guilherme.vialle/

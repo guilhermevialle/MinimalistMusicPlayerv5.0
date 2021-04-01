@@ -238,7 +238,7 @@ body {
 }
 
 .musicTimerBox .times p {
-  margin: 0 40px;
+  margin: 0 37px;
 }
 
 .musicTimerBox input[type="range"] {
@@ -631,5 +631,54 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
+}
+
+.socialMedia {
+  width: 200px;
+  height: 180px;
+  position: absolute;
+  left: 1%;
+  top: 5%;
+  z-index: 5;
+  -webkit-transition: 0.3s all ease-in;
+  transition: 0.3s all ease-in;
+  background-image: -webkit-gradient(linear, right top, left bottom, from(#0d0102), color-stop(#110203), color-stop(#150204), color-stop(#180304), color-stop(#1b0405), color-stop(#1c0405), color-stop(#1c0505), color-stop(#1d0505), color-stop(#1b0505), color-stop(#190404), color-stop(#170404), to(#140303));
+  background-image: linear-gradient(to left bottom, #0d0102, #110203, #150204, #180304, #1b0405, #1c0405, #1c0505, #1d0505, #1b0505, #190404, #170404, #140303);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 5px;
+}
+
+.socialMedia div {
+  width: 100%;
+  height: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.socialMedia div img {
+  margin: 0 4px;
+  width: 24px;
+}
+
+.socialMedia div a {
+  margin-left: 4px;
+  text-decoration: none;
+  color: #909090;
+  -webkit-transition: 0.3s all ease-out;
+  transition: 0.3s all ease-out;
+}
+
+.socialMedia div a:hover {
+  color: white;
+}
+
+.teste2 {
+  -webkit-transform: translateX(-120%);
+          transform: translateX(-120%);
 }
 /*# sourceMappingURL=file.css.map */

@@ -83,14 +83,13 @@ const volumeRange = document.getElementById("volumeRange");
 const musicTimeDinamic = document.getElementById("musicTimeDinamic");
 const addMusicBoxInput = document.querySelectorAll("#addMusicsBox input");
 const addMusicBox = document.getElementById("addMusicsBox");
+const socialMedia = document.querySelector(".socialMedia");
 
 // time slider / controlador do tempo da musica
-
 const timeSlider = document.getElementById("timeSlider");
 timeSlider.value = 0;
 
 // play music function
-
 play.style.maxWidth = "20%";
 
 play.addEventListener("click", playMusic, false);
@@ -112,7 +111,7 @@ repeat.addEventListener("click", repeatMusic, false);
 function repeatMusic() {
     if (audioDaMusica.loop == 0) {
         audioDaMusica.loop = 1;
-        repeat.style.transform = "rotateZ(45deg)";
+        repeat.style.transform = "rotateZ(100deg)";
     } else {
         audioDaMusica.loop = 0;
         repeat.style.backgroundColor = "transparent";
@@ -121,7 +120,6 @@ function repeatMusic() {
 }
 
 // prev music function
-
 prev.addEventListener("click", prevMusic, false);
 
 function prevMusic() {
@@ -157,7 +155,6 @@ function nextMusic() {
 }
 
 // no volume function
-
 volume.addEventListener("click", semVolume, false);
 
 function semVolume() {
@@ -175,14 +172,12 @@ function semVolume() {
 timeSlider.addEventListener("change", changeDuration, false);
 
 // escolher duracao da musica
-
 function changeDuration() {
     sliderPosition = audioDaMusica.duration * (timeSlider.value / 100);
     audioDaMusica.currentTime = sliderPosition;
 }
 
 // duracao da musica dinamica
-
 const totalTime = document.getElementById("totalTime");
 
 function tempoDaMusica() {
@@ -213,7 +208,6 @@ function rangeSlider() {
 }
 
 // volume change slider
-
 volumeRange.addEventListener("change", changeVolume, false);
 
 volumeRange.value = 20;
@@ -222,9 +216,7 @@ audioDaMusica.volume = 0.2;
 function changeVolume() {
     audioDaMusica.volume = volumeRange.value / 100;
 }
-
 // interface animation kk
-
 const interface = document.getElementById("interface");
 const footer = document.querySelector(".footer");
 const paiDaInterface = document.querySelector(".paiDaInterface");
@@ -235,7 +227,6 @@ function animation() {
 }
 
 // miniatura scripts
-
 const nomeDoAutorMiniatura = document.querySelectorAll("#nomeDoAutorMiniatura");
 const nomeDaMusicaMiniatura = document.querySelectorAll(
     "#nomeDaMusicaMiniatura"
@@ -316,11 +307,6 @@ btnPegarFiles.addEventListener(
 
 // funccao q add o objeto no array
 function AddInMainArray(name, path, img, autor) {
-    // if (name == musicas[musicas.length - 1].name) {
-    //     console.log("musica repetida");
-    //     return;
-    // }
-
     const newMusicArray = {
         name: name,
         path: path,
@@ -389,6 +375,7 @@ const addMusicButton = document.getElementById("addMusicButton");
 
 function showBox() {
     addMusicBox.classList.toggle("teste");
+    socialMedia.classList.toggle("teste2");
 }
 
 // colocar uma nova musica adicionada pra tocar *****BUG RESOLVIDO*****

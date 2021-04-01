@@ -98,11 +98,11 @@ play.addEventListener("click", playMusic, false);
 function playMusic() {
     if (audioDaMusica.paused) {
         audioDaMusica.play();
-        play.src = "./icons/pause.png";
+        play.src = "./icons/pause.svg";
         var newtimer = setInterval(rangeSlider, 1000);
     } else {
         audioDaMusica.pause();
-        play.src = "./icons/play.png";
+        play.src = "./icons/play.svg";
     }
 }
 
@@ -164,11 +164,11 @@ volume.addEventListener("click", semVolume, false);
 function semVolume() {
     if (audioDaMusica.volume) {
         audioDaMusica.volume = 0;
-        volume.src = "./icons/novolume.png";
+        volume.src = "./icons/novolume.svg";
         volumeRange.style.display = "none";
     } else {
         audioDaMusica.volume = volumeRange.value / 100;
-        volume.src = "./icons/volume.png";
+        volume.src = "./icons/volume.svg";
         volumeRange.style.display = "flex";
     }
 }
@@ -188,7 +188,10 @@ const totalTime = document.getElementById("totalTime");
 
 function tempoDaMusica() {
     var timeNow = Math.ceil(audioDaMusica.currentTime);
-    musicTimeDinamic.innerHTML = timeNow + "s";
+    musicTimeDinamic.innerHTML =
+        parseInt((audioDaMusica.currentTime / 60) % 60) +
+        ":" +
+        parseInt(audioDaMusica.currentTime % 60);
     timeNow = (audioDaMusica.duration / 60).toFixed(2).toString();
     totalTime.textContent = timeNow.replace(".", ":");
 }

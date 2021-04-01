@@ -133,6 +133,7 @@ body {
 .controllers {
   width: 100%;
   height: 100%;
+  padding: 0 5px;
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -153,11 +154,7 @@ body {
 
 .controllers img {
   display: block;
-  max-width: 19.5%;
-  max-height: 100%;
-  max-width: 32px;
   cursor: pointer;
-  border-radius: 20px;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
@@ -172,7 +169,10 @@ body {
 }
 
 #play {
-  max-width: 22%;
+  display: block;
+  width: 60x;
+  height: 60px;
+  padding: 5px;
   background-color: #3f0d12;
   background-image: linear-gradient(315deg, #580c13 0%, #240609 74%);
   border-radius: 50%;
@@ -210,22 +210,24 @@ body {
   position: relative;
 }
 
-#totalTime,
-#musicTimeDinamic {
-  color: white;
-  font-size: 0.89rem;
-  position: absolute;
+.musicTimerBox .times {
+  width: 100%;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #909090;
+  font-size: 0.8rem;
 }
 
-#musicTimeDinamic {
-  right: 85%;
-  bottom: 12px;
-}
-
-#totalTime {
-  letter-spacing: 1px;
-  left: 70%;
-  bottom: 15px;
+.musicTimerBox .times p {
+  margin: 0 40px;
 }
 
 input[type="range"] {
@@ -257,10 +259,6 @@ input[type="range"]::-webkit-slider-thumb {
   border-radius: 18px;
   cursor: pointer;
   -webkit-appearance: none;
-}
-
-input[type="range"]:focus::-webkit-slider-runnable-track {
-  background: #310505;
 }
 
 input[type="range"]::-moz-range-track {
@@ -336,7 +334,7 @@ how to remove the virtical space around the range input in IE*/
   width: 50px;
   position: absolute;
   bottom: 36.5%;
-  right: 4.5%;
+  right: 6.5%;
   -webkit-transition: all linear 0.5s;
   transition: all linear 0.5s;
   -webkit-transform: rotateZ(-90deg);
@@ -587,13 +585,12 @@ how to remove the virtical space around the range input in IE*/
   position: absolute;
   left: 78%;
   top: 26.6%;
-  color: white;
+  color: #909090;
   outline: none;
   border: none;
   width: 125px;
   border-radius: 20px;
   letter-spacing: 1px;
-  opacity: 0.7;
   font-size: 0.8rem;
   cursor: pointer;
 }
@@ -652,13 +649,12 @@ how to remove the virtical space around the range input in IE*/
   position: absolute;
   right: 78.5%;
   top: 40%;
-  color: white;
+  color: #909090;
   outline: none;
   border: none;
   width: 125px;
   border-radius: 20px;
   letter-spacing: 1px;
-  opacity: 0.7;
   font-size: 0.8rem;
   cursor: pointer;
 }

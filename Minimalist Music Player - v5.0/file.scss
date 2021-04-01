@@ -137,17 +137,17 @@ body {
 .controllers {
     width: 100%;
     height: 100%;
+
+    padding: 0 5px;
+
     grid-area: controllers;
     @include flexTemplate();
     justify-content: space-evenly;
 
     img {
         display: block;
-        max-width: 19.5%;
-        max-height: 100%;
-        max-width: 32px;
+
         cursor: pointer;
-        border-radius: 20px;
         transition: all 0.4s ease;
 
         &:hover {
@@ -162,7 +162,11 @@ body {
 }
 
 #play {
-    max-width: 22%;
+    display: block;
+    width: 60x;
+    height: 60px;
+
+    padding: 5px;
     background-color: #3f0d12;
     background-image: linear-gradient(315deg, #580c13 0%, #240609 74%);
 
@@ -189,24 +193,22 @@ body {
     @include flexTemplate();
     flex-direction: column;
     position: relative;
-}
 
-#totalTime,
-#musicTimeDinamic {
-    color: white;
-    font-size: 0.89rem;
-    position: absolute;
-}
+    .times {
+        width: 100%;
+        height: 30px;
 
-#musicTimeDinamic {
-    right: 85%;
-    bottom: 12px;
-}
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-#totalTime {
-    letter-spacing: 1px;
-    left: 70%;
-    bottom: 15px;
+        color: #909090;
+        font-size: 0.8rem;
+
+        p {
+            margin: 0 40px;
+        }
+    }
 }
 
 input[type="range"] {
@@ -236,9 +238,7 @@ input[type="range"]::-webkit-slider-thumb {
     cursor: pointer;
     -webkit-appearance: none;
 }
-input[type="range"]:focus::-webkit-slider-runnable-track {
-    background: rgb(49, 5, 5);
-}
+
 input[type="range"]::-moz-range-track {
     background: rgba(0, 0, 0, 0.4);
     border: 1.3px solid rgba(0, 0, 0, 0);
@@ -304,7 +304,7 @@ how to remove the virtical space around the range input in IE*/
     width: 50px;
     position: absolute;
     bottom: 36.5%;
-    right: 4.5%;
+    right: 6.5%;
     transition: all linear 0.5s;
     transform: rotateZ(-90deg);
 
@@ -543,14 +543,16 @@ how to remove the virtical space around the range input in IE*/
     transform: rotateZ(-90deg);
     position: absolute;
     left: 78%;
+
     top: 26.6%;
-    color: white;
+    color: #909090;
     outline: none;
+
     border: none;
     width: 125px;
     border-radius: 20px;
+
     letter-spacing: 1px;
-    opacity: 0.7;
     font-size: 0.8rem;
     cursor: pointer;
 }
@@ -586,14 +588,16 @@ how to remove the virtical space around the range input in IE*/
     transform: rotateZ(90deg);
     position: absolute;
     right: 78.5%;
+
     top: 40%;
-    color: white;
+    color: #909090;
     outline: none;
+
     border: none;
     width: 125px;
     border-radius: 20px;
+
     letter-spacing: 1px;
-    opacity: 0.7;
     font-size: 0.8rem;
     cursor: pointer;
 }

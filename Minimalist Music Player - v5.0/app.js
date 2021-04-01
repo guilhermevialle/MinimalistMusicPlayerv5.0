@@ -107,17 +107,16 @@ function playMusic() {
 }
 
 // repeat music function
-
 repeat.addEventListener("click", repeatMusic, false);
 
 function repeatMusic() {
     if (audioDaMusica.loop == 0) {
         audioDaMusica.loop = 1;
-        repeat.style.transform = "scale(1.3,1.3)";
+        repeat.style.transform = "rotateZ(45deg)";
     } else {
         audioDaMusica.loop = 0;
         repeat.style.backgroundColor = "transparent";
-        repeat.style.transform = "none";
+        repeat.style.transform = "rotateZ(0)";
     }
 }
 

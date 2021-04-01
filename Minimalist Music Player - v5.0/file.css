@@ -153,14 +153,22 @@ body {
 }
 
 .controllers img {
-  display: block;
+  border: none;
+  border-bottom: 0.5px solid transparent;
+  border-top: 0.5px solid transparent;
+  border-radius: 30%;
+  padding: 5px;
   cursor: pointer;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 
 .controllers img:hover {
-  background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
+  background-image: linear-gradient(315deg, #3f0d12 0%, #200206 74%);
+  border-bottom: 0.5px solid #8b0000;
+  border-top: 0.5px solid #8b0000;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
 }
 
 .controllers #repeat,
@@ -334,7 +342,7 @@ how to remove the virtical space around the range input in IE*/
   width: 50px;
   position: absolute;
   bottom: 36.5%;
-  right: 6.5%;
+  right: 6%;
   -webkit-transition: all linear 0.5s;
   transition: all linear 0.5s;
   -webkit-transform: rotateZ(-90deg);

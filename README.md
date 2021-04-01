@@ -19,7 +19,7 @@
 
 -   #### Player Interface
 
-    ![Player Interface]("./Minimalist Music Player - v5.0/screenshots/capture.png")
+    <img src="./Minimalist Music Player - v5.0/screenshots/capture.png">
 
 -   #### Usage
 
@@ -27,14 +27,14 @@
 
 -   #### Guide to selecting and adding songs
 
-    ![Tabs](./Minimalist Music Player - v5.0/screenshots/capture2.png)
+       <img src="./Minimalist Music Player - v5.0/screenshots/capture2.png">
 
 -   #### You can add your own music, with your own images, names...
 
     ![Adding musics](./Minimalist Music Player - v5.0/gifs/gif.gif)
 
 -   #### You can also choose which song you want to play in a list format
-    ![Playlist](./Minimalist Music Player - v5.0/screenshots/capture3.png)
+      <img src="./Minimalist Music Player - v5.0/screenshots/capture3.png">
 
 ### About copy
 

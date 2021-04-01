@@ -19,7 +19,7 @@
 
 -   #### Player Interface
 
-    <img src="./Minimalist Music Player - v5.0/screenshots/capture.png" width="450px">
+    <img src="./Minimalist Music Player - v5.0/Screenshots/capture.png" width="450px">
 
 -   #### Usage
 
@@ -27,7 +27,7 @@
 
 -   #### Guide to selecting and adding songs
 
-       <img src="./Minimalist Music Player - v5.0/screenshots/capture2.png">
+       <img src="./Minimalist Music Player - v5.0/Screenshots/capture2.png">
 
 -   #### You can add your own music, with your own images, names...
 

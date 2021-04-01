@@ -19,7 +19,7 @@
 
 -   #### Player Interface
 
-    ![Player Interface](./Minimalist Music Player - v5.0/screenshots/capture.png)
+    ![Player Interface]("./Minimalist Music Player - v5.0/screenshots/capture.png")
 
 -   #### Usage
 

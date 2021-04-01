@@ -34,7 +34,7 @@
     ![Adding musics](https://github.com/guilhermevialle/MinimalistMusicPlayerv5.0/blob/main/Minimalist%20Music%20Player%20-%20v5.0/gifs/gif2.gif)
 
 -   #### You can also choose which song you want to play in a list format
-      ![Playlist](https://github.com/guilhermevialle/MinimalistMusicPlayerv5.0/blob/main/Minimalist%20Music%20Player%20-%20v5.0/Screenshots/capture.PNG)
+      ![Playlist](https://github.com/guilhermevialle/MinimalistMusicPlayerv5.0/blob/main/Minimalist%20Music%20Player%20-%20v5.0/Screenshots/capture3.PNG)
 
 ### About copy
 

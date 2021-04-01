@@ -262,7 +262,6 @@ for (let newArray = 0; newArray < nomeDaMusicaMiniatura.length; newArray++) {
 }
 
 // enviar arquivos / add music
-
 const btnPegarFiles = document.getElementById("pegarFiles");
 
 const imgFile = document.getElementById("imgFile");
@@ -295,29 +294,40 @@ btnPegarFiles.addEventListener(
         //autor
         const autorFileCreated = autorFile.value;
 
-        AddInMainArray(
-            nomeDaMusicaFileCreated,
-            musicFunc(),
-            imgFunc(),
-            autorFileCreated
-        );
-        addMusicInMiniatura(
-            nomeDaMusicaFileCreated,
-            imgFunc(),
-            autorFileCreated
-        );
+        if (nomeDaMusicaFileCreated == musicas[musicas.length - 1].name) {
+            alert("This song already exist.");
+            return;
+        } else {
+            AddInMainArray(
+                nomeDaMusicaFileCreated,
+                musicFunc(),
+                imgFunc(),
+                autorFileCreated
+            );
+            addMusicInMiniatura(
+                nomeDaMusicaFileCreated,
+                imgFunc(),
+                autorFileCreated
+            );
+        }
     },
     false
 );
 
 // funccao q add o objeto no array
 function AddInMainArray(name, path, img, autor) {
+    // if (name == musicas[musicas.length - 1].name) {
+    //     console.log("musica repetida");
+    //     return;
+    // }
+
     const newMusicArray = {
         name: name,
         path: path,
         img: img,
         autor: autor,
     };
+
     musicas.push(newMusicArray);
 }
 
@@ -384,10 +394,8 @@ function showBox() {
 // colocar uma nova musica adicionada pra tocar *****BUG RESOLVIDO*****
 const addMusicWithNewArray = () => {
     let newFaixa = document.querySelectorAll("#faixa");
-    console.log(musicas);
 
     newFaixa.forEach((item, index) => {
-        console.log(item, index);
         item.addEventListener(
             "click",
             () => {

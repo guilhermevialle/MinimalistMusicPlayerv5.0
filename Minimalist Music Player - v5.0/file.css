@@ -379,6 +379,7 @@ body {
   height: 80%;
   -o-object-fit: cover;
      object-fit: cover;
+  margin: auto 0;
 }
 
 .infoMusic {

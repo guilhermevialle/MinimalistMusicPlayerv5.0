@@ -59,9 +59,11 @@ body {
     width: 27%;
     height: 90vh;
     display: grid;
+
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
+
     grid-template-areas:
         "imgDaMusicaBox imgDaMusicaBox imgDaMusicaBox"
         "imgDaMusicaBox imgDaMusicaBox imgDaMusicaBox"
@@ -89,7 +91,6 @@ body {
         #140303
     );
 
-    border-radius: 8px;
     position: relative;
 }
 
@@ -155,7 +156,7 @@ body {
         transition: all 0.4s ease;
 
         &:hover {
-            background-image: linear-gradient(315deg, #3f0d12 0%, #200206 74%);
+            background-image: linear-gradient(315deg, #3b0a0f 0%, #200206 74%);
             border-bottom: 0.5px solid #8b0000;
             border-top: 0.5px solid #8b0000;
             transform: scale(1.1, 1.1);
@@ -392,8 +393,8 @@ how to remove the virtical space around the range input in IE*/
 
 .faixa {
     width: 100%;
-    height: 80px;
-    padding: 10px;
+    height: 65px;
+    padding: 5px;
 
     margin: 3px 3px;
     flex-direction: row;
@@ -403,7 +404,7 @@ how to remove the virtical space around the range input in IE*/
     transition: all 0.3s;
     cursor: pointer;
 
-    border-bottom: 1px solid #555555;
+    border-bottom: 1px solid #505050;
     margin-top: 1px;
 
     &:hover {
@@ -412,7 +413,7 @@ how to remove the virtical space around the range input in IE*/
 }
 
 .imgFaixaBox {
-    width: 50%;
+    width: 30%;
     height: 100%;
 
     img {
@@ -423,7 +424,7 @@ how to remove the virtical space around the range input in IE*/
 }
 
 .infoMusic {
-    width: 50%;
+    width: 70%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -490,14 +491,11 @@ how to remove the virtical space around the range input in IE*/
         #140303
     );
 
-    h3 {
-        font-weight: 600;
-    }
-
     label {
         text-align: center;
         width: 80%;
         padding: 10px;
+
         cursor: pointer;
         border-radius: 10px;
         border-bottom: 2px solid rgba(53, 8, 8, 0.459);
@@ -511,9 +509,11 @@ how to remove the virtical space around the range input in IE*/
         text-align: center;
         background-color: transparent;
         font-size: 1rem;
+
         border: none;
         outline: none;
         width: 80%;
+
         height: 50px;
         border-bottom: 1px solid rgba(41, 6, 6, 0.267);
         color: white;

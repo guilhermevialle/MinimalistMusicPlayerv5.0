@@ -186,13 +186,15 @@ function changeDuration() {
 const totalTime = document.getElementById("totalTime");
 
 function tempoDaMusica() {
-    var timeNow = Math.ceil(audioDaMusica.currentTime);
     musicTimeDinamic.innerHTML =
         parseInt((audioDaMusica.currentTime / 60) % 60) +
         ":" +
         parseInt(audioDaMusica.currentTime % 60);
-    timeNow = (audioDaMusica.duration / 60).toFixed(2).toString();
-    totalTime.textContent = timeNow.replace(".", ":");
+
+    totalTime.textContent =
+        parseInt((audioDaMusica.duration / 60) % 60) +
+        ":" +
+        parseInt(audioDaMusica.duration % 60);
 }
 
 function rangeSlider() {
